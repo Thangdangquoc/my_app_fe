@@ -11,6 +11,8 @@ import Blog from "./views/Blog/Blog";
 import HomePage from "./views/Home/HomePage";
 import ManageUser from "./views/Admin/Content/ManageUser";
 import Dashboard from "./views/Admin/Content/DashBoard";
+import DashboardUser from "./views/User/Content/DashboardUser";
+import ManageCategory from "./views/User/Content/ManageCategory";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,7 +21,10 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route index element={<HomePage />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/user" element={<User />} />
+          <Route path="/user" element={<User />}>
+            <Route index element={<DashboardUser />} />
+            <Route path="manage-cate" element={<ManageCategory />} />
+          </Route>
         </Route>
         <Route path="admin" element={<Admin />}>
           <Route index element={<Dashboard />} />

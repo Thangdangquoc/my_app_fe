@@ -1,5 +1,6 @@
 import "./App.scss";
 import Header from "./views/Nav/Header";
+
 import { Outlet } from "react-router-dom";
 
 const App = () => {

@@ -1,4 +1,4 @@
-const Dashboard = () => {
+const DashboardUser = () => {
   return (
     <>
       <table class="table">
@@ -33,4 +33,4 @@ const Dashboard = () => {
     </>
   );
 };
-export default Dashboard;
+export default DashboardUser;
